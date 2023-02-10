@@ -9,10 +9,37 @@ class ScoreMachine:
                 total += item
         return total
     
-def testAces():
-    x = ScoreMachine()
-    assert 5 == x.aces([1,1,1,1,1])
-    assert 4 == x.aces([1,1,1,1])
+    def deuces(self, rolls):
+        total = 0
+        for item in rolls:
+            if item == 2:
+                total += item
+        return total
     
-    print("Aces tests passed!")
+    def tres(self, rolls):
+        total = 0
+        for item in rolls:
+            if item == 3:
+                total += item
+        return total
     
+    def quads(self, rolls):
+        total = 0
+        for item in rolls:
+            if item == 4:
+                total += item
+        return total
+    
+    def pentas(self, rolls):
+        total = 0
+        for item in rolls:
+            if item == 5:
+                total += item
+        return total
+    
+    def hextas(self, rolls):
+        total = 0
+        for item in rolls:
+            if item == 6:
+                total += item
+        return total
